@@ -6,7 +6,7 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/04 15:15:29 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/04 17:34:32 by fmoulin          ###   ########.fr       */
+/*   Updated: 2026/02/04 18:05:01 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ public:
 	Dog();
 	Dog(const Dog &copy);
 	Dog &operator =(const Dog &src);
-	~Dog();
+	virtual ~Dog();
 
 	void	makeSound() const;
 };

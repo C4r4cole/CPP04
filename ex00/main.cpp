@@ -6,12 +6,13 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/04 12:35:01 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/04 16:57:06 by fmoulin          ###   ########.fr       */
+/*   Updated: 2026/02/04 18:06:22 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 #include "Cat.hpp"
+#include "WrongCat.hpp"
 
 int main()
 {
@@ -25,5 +26,18 @@ int main()
 	j->makeSound();
 	meta->makeSound();
 
+	for (int i = 0; i < 5; i++)
+		std::cout << std::endl;
+
+	const WrongAnimal* h = new WrongCat();
+	std::cout << h->getType() << " " << std::endl;
+	h->makeSound();
+
+	for (int i = 0; i < 5; i++)
+		std::cout << std::endl;
+	
+	delete h;
+	delete j;
+	delete i;
 	return 0;
 }
