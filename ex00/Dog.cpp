@@ -6,7 +6,7 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/04 15:14:56 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/04 17:38:13 by fmoulin          ###   ########.fr       */
+/*   Updated: 2026/02/05 12:20:07 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 Dog::Dog()
 {
 	_type = "Dog";
-	std::cout	<< "An dog is born"
+	std::cout	<< "A dog is born"
 				<< std::endl;
 }
 
