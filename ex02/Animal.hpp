@@ -6,7 +6,7 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/04 12:35:35 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/04 18:04:46 by fmoulin          ###   ########.fr       */
+/*   Updated: 2026/02/05 14:47:48 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ public:
 	virtual ~Animal();
 	
 	std::string	getType() const;
-	virtual void	makeSound() const;
+	virtual void	makeSound() const = 0;
 };
 
 #endif

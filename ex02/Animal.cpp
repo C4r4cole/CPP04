@@ -6,7 +6,7 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/04 12:39:34 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/04 17:37:49 by fmoulin          ###   ########.fr       */
+/*   Updated: 2026/02/05 14:48:03 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,3 @@ std::string	Animal::getType() const
 	return (this->_type);
 }
 
-void	Animal::makeSound() const
-{
-	std::cout << "An animal whispered..." << std::endl;
-}
