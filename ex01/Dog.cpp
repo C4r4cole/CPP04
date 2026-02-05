@@ -6,7 +6,7 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/04 15:14:56 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/05 12:05:43 by fmoulin          ###   ########.fr       */
+/*   Updated: 2026/02/05 14:01:05 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,18 @@
 Dog::Dog()
 {
 	_type = "Dog";
-	this->_brain = new Brain();
-	std::cout	<< "An dog is born"
+	std::cout	<< "A dog is born"
 				<< std::endl;
+	this->_brain = new Brain();
 }
 
 Dog::Dog(const Dog &copy)
 {
 	this->_type = copy._type;
-	this->_brain = new Brain();
-	*(this->_brain) = *(copy._brain);
 	std::cout	<< "Such as Dolly, a dog has been cloned"
 				<< std::endl;
+	this->_brain = new Brain();
+	*(this->_brain) = *(copy._brain);
 }
 
 Dog &Dog::operator =(const Dog &src)
@@ -51,4 +51,9 @@ Dog::~Dog()
 void	Dog::makeSound() const
 {
 	std::cout << "A dog barked" << std::endl;
+}
+
+Brain	&Dog::getBrain() const
+{
+	return (*this->_brain);
 }

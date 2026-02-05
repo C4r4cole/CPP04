@@ -6,7 +6,7 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/04 15:14:10 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/05 12:05:34 by fmoulin          ###   ########.fr       */
+/*   Updated: 2026/02/05 12:30:13 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 Cat::Cat()
 {
 	_type = "Cat";
-	this->_brain = new Brain();
 	std::cout	<< "A cat is born"
 				<< std::endl;
+	this->_brain = new Brain();
 }
 
 Cat::Cat(const Cat &copy)

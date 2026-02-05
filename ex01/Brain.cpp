@@ -6,7 +6,7 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/05 10:27:56 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/05 11:25:25 by fmoulin          ###   ########.fr       */
+/*   Updated: 2026/02/05 13:53:19 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,5 @@ Brain	&Brain::operator =(const Brain &src)
 	
 Brain::~Brain()
 {
-	std::cout << "The electroencephalogram is flat. A Brain is dead..." << std::endl;
+	std::cout << "An electroencephalogram is flat. A Brain is dead..." << std::endl;
 }
