@@ -6,7 +6,7 @@
 #    By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/11 14:02:02 by fmoulin           #+#    #+#              #
-#    Updated: 2026/02/05 14:36:24 by fmoulin          ###   ########.fr        #
+#    Updated: 2026/02/05 14:36:53 by fmoulin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 #           CONFIG
 # ===========================
 
-NAME        = IDWTSTWOF
+NAME        = Abstract_class
 
 OBJ_DIR     = obj
 
