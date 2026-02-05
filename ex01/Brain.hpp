@@ -6,8 +6,26 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/05 10:20:20 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/05 10:20:30 by fmoulin          ###   ########.fr       */
+/*   Updated: 2026/02/05 11:30:08 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#ifndef BRAIN_HPP
+# define BRAIN_HPP
+
+# include <string>
+# include <iostream>
+# include <cstdlib>
+
+class Brain
+{
+private:
+	std::string	_ideas[100];
+public:
+	Brain();
+	Brain(const Brain &copy);
+	Brain	&operator =(const Brain &src);
+	~Brain();
+};
+
+#endif

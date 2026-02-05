@@ -6,7 +6,7 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/04 15:15:29 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/05 10:24:46 by fmoulin          ###   ########.fr       */
+/*   Updated: 2026/02/05 10:44:08 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,12 @@
 # define DOG_HPP
 
 #include "Animal.hpp"
+#include "Brain.hpp"
 
 class Dog : public Animal
 {
+private:
+	Brain*	_brain;
 public:
 	Dog();
 	Dog(const Dog &copy);
