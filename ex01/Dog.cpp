@@ -6,7 +6,7 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/04 15:14:56 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/05 14:01:05 by fmoulin          ###   ########.fr       */
+/*   Updated: 2026/02/05 14:27:53 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ void	Dog::makeSound() const
 	std::cout << "A dog barked" << std::endl;
 }
 
-Brain	&Dog::getBrain() const
+const Brain	&Dog::getBrain() const
 {
 	return (*this->_brain);
 }
