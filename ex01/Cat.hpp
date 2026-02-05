@@ -6,12 +6,9 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/04 15:15:14 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/05 10:22:03 by fmoulin          ###   ########.fr       */
+/*   Updated: 2026/02/04 18:04:55 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#ifndef CAT_HPP
-# define CAT_HPP
 
 #include "Animal.hpp"
 
@@ -25,5 +22,3 @@ public:
 	
 	void	makeSound() const;
 };
-
-#endif

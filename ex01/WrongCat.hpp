@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   WrongCat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/04 15:15:14 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/05 10:22:03 by fmoulin          ###   ########.fr       */
+/*   Updated: 2026/02/04 17:36:01 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CAT_HPP
-# define CAT_HPP
+#include "WrongAnimal.hpp"
 
-#include "Animal.hpp"
-
-class Cat : public Animal
+class WrongCat : public WrongAnimal
 {
 public:
-	Cat();
-	Cat(const Cat &copy);
-	Cat &operator =(const Cat &src);
-	virtual ~Cat();
+	WrongCat();
+	WrongCat(const WrongCat &copy);
+	WrongCat &operator =(const WrongCat &src);
+	virtual ~WrongCat();
 	
 	void	makeSound() const;
 };
-
-#endif
