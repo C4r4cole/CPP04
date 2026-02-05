@@ -1,43 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   AMateria.cpp                                       :+:      :+:    :+:   */
+/*   Ice.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/05 15:22:18 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/05 23:23:02 by fmoulin          ###   ########.fr       */
+/*   Created: 2026/02/05 20:29:13 by fmoulin           #+#    #+#             */
+/*   Updated: 2026/02/05 23:19:18 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "AMateria.hpp"
+#include "Ice.hpp"
 
-AMateria::AMateria(std::string const & type) : _type(type)
+Ice::Ice() : AMateria("ice")
 {
-	std::cout << "The materia has been created!" << std::endl;
+	std::cout << "The ice materia has been created!" << std::endl;
 }
 
-AMateria::AMateria(const AMateria &copy) : _type(copy._type)
+Ice::Ice(const Ice &copy) : AMateria("ice")
 {
+	(void)copy;
 	std::cout << "The materia has been copied" << std::endl;
 }
 
-AMateria &AMateria::operator =(const AMateria &src)
+Ice &Ice::operator =(const Ice &src)
 {
 	(void)src;
 	return (*this);
 }
 
-AMateria::~AMateria()
+Ice::~Ice()
 {
 	std::cout << "The materia has been destroyed!" << std::endl;
 }
 
-std::string const &AMateria::getType() const
+AMateria* Ice::clone() const
 {
-	return (this->_type);
+	AMateria *clone = new Ice();
+	return (clone);
 }
 
-void AMateria::use(ICharacter& target)
-{	
+void Ice::use(ICharacter& target)
+{
+	std::cout << "* shoots an ice bolt at " << target.getName() << " *" << std::endl;
 }
