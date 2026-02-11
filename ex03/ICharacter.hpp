@@ -6,7 +6,7 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/05 20:01:07 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/05 23:31:53 by fmoulin          ###   ########.fr       */
+/*   Updated: 2026/02/10 12:13:45 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 # define ICHARACTER_HPP
 
 # include <string>
-# include <cstdlib>
-# include <iostream>
 
 class AMateria;
 

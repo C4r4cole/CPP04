@@ -6,7 +6,7 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/05 15:22:18 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/05 23:23:02 by fmoulin          ###   ########.fr       */
+/*   Updated: 2026/02/11 14:52:02 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,6 @@ std::string const &AMateria::getType() const
 }
 
 void AMateria::use(ICharacter& target)
-{	
+{
+	(void)target;
 }
