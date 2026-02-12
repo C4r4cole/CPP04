@@ -6,7 +6,7 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/05 20:29:13 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/10 11:59:07 by fmoulin          ###   ########.fr       */
+/*   Updated: 2026/02/12 14:55:11 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Cure::Cure() : AMateria("cure")
 {
-	std::cout << "The cure has been created!" << std::endl;
+	std::cout << "The cure materia has been created!" << std::endl;
 }
 
 Cure::Cure(const Cure &copy) : AMateria("cure")
@@ -36,6 +36,7 @@ Cure::~Cure()
 
 AMateria* Cure::clone() const
 {
+	std::cout << YELLOW << "!Cloned! " << RESET;
 	AMateria *clone = new Cure();
 	return (clone);
 }

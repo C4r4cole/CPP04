@@ -6,7 +6,7 @@
 #    By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/11 14:02:02 by fmoulin           #+#    #+#              #
-#    Updated: 2026/02/05 15:21:46 by fmoulin          ###   ########.fr        #
+#    Updated: 2026/02/12 12:30:16 by fmoulin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 #           CONFIG
 # ===========================
 
-NAME        = Interface_recap
+NAME        = play
 
 OBJ_DIR     = obj
 
@@ -26,7 +26,7 @@ RM          = rm -f
 #           SOURCES
 # ===========================
 
-SRCS =  main.cpp
+SRCS =  main.cpp AMateria.cpp Character.cpp Cure.cpp Ice.cpp MateriaSource.cpp
 		
 OBJS = $(SRCS:%.cpp=$(OBJ_DIR)/%.o)
 

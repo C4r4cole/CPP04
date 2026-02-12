@@ -6,7 +6,7 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 15:55:42 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/11 16:30:09 by fmoulin          ###   ########.fr       */
+/*   Updated: 2026/02/12 15:45:53 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,11 @@
 
 # include <string>
 # include "AMateria.hpp"
+# include "IMateriaSource.hpp"
 
 class AMateria;
 
-class MateriaSource
+class MateriaSource : public IMateriaSource
 {
 	private:
 		AMateria*	_templates[4];
@@ -26,9 +27,11 @@ class MateriaSource
 		MateriaSource();
 		MateriaSource(MateriaSource const &copy);
 		MateriaSource &operator =(MateriaSource const &src);
-		virtual ~MateriaSource() {}
+		virtual ~MateriaSource();
 		virtual void learnMateria(AMateria*);
 		virtual AMateria* createMateria(std::string const & type);
+
+		virtual void	printMateriaSource() const;
 };
 
 #endif

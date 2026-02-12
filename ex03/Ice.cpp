@@ -6,7 +6,7 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/05 20:29:13 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/05 23:19:18 by fmoulin          ###   ########.fr       */
+/*   Updated: 2026/02/12 14:55:26 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ Ice::~Ice()
 
 AMateria* Ice::clone() const
 {
+	std::cout << YELLOW << "!Cloned! " << RESET;
 	AMateria *clone = new Ice();
 	return (clone);
 }
