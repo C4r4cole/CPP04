@@ -6,7 +6,7 @@
 /*   By: fmoulin <fmoulin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/05 15:22:21 by fmoulin           #+#    #+#             */
-/*   Updated: 2026/02/12 16:49:38 by fmoulin          ###   ########.fr       */
+/*   Updated: 2026/02/16 16:05:21 by fmoulin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -154,7 +154,43 @@ int	main(void)
 	
 	for (int i = 0; i < 3; i++)
 		std::cout << std::endl;
+	
+	// *************************
+	// CHARACTER'S DEEP COPY
+	// *************************
 		
+	std::cout << std::endl;
+	std::cout << RED << "*** CHARACTER'S DEEP COPY ***" << RESET << std::endl;
+	std::cout << std::endl;
+
+	Character*	horst = new Character("Horst");
+	AMateria* a = src->createMateria("ice");
+	AMateria* b = src->createMateria("cure");
+	horst->equip(a);
+	horst->equip(b);
+	Character*	dubka = new Character(*horst);
+	horst->use(0, *dubka);
+	dubka->use(0, *horst);
+	horst->unequip(0);
+	dubka->use(0, *horst);
+	
+	for (int i = 0; i < 3; i++)
+		std::cout << std::endl;
+
+	// *************************
+	// MATERIA'S DEEP COPY
+	// *************************
+		
+	std::cout << std::endl;
+	std::cout << RED << "*** MATERIA'S DEEP COPY ***" << RESET << std::endl;
+	std::cout << std::endl;
+	
+	MateriaSource first;
+	first.learnMateria(spellA);
+	first.learnMateria(spellB);
+	MateriaSource second(first);
+	AMateria* tmp2 = second.createMateria("ice");
+	
 	// ************************
 	// DELETE
 	// ************************
@@ -164,9 +200,12 @@ int	main(void)
 	std::cout << std::endl;
 	
 	delete tmp;
+	delete tmp2;
 	
 	delete sov;
 	delete caracole;
+	delete horst;
+	delete dubka;	
 	
 	for (int i = 0; i < 3; i++)
 		std::cout << std::endl;
